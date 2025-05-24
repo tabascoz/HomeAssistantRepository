@@ -1,6 +1,7 @@
 # Home Assistant for Gentoo
 ## without Docker & Virtual Environments
 
+Fork of official repository  (https://github.com/gentoo-mirror/HomeAssistantRepository) with untested/updated ebuilds for current HomeAssistant Versions. Focusing on homeassistant-full branch. 
 
 [![OS](https://img.shields.io/badge/OS-Gentoo%20Linux-blue)](https://www.gentoo.org/)
 [![weekly commits](https://img.shields.io/github/commit-activity/w/onkelbeh/HomeAssistantRepository)](https://github.com/onkelbeh/HomeAssistantRepository/commits/)

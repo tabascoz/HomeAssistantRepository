@@ -6,11 +6,11 @@
     <name>Andreas Billmeier</name>
   </maintainer>
   <upstream>
-    <remote-id type="pypi">aiohasupervisor</remote-id>
-    <remote-id type="github">home-assistant-libs/python-supervisor-client</remote-id>
+    <remote-id type="pypi">chacha20poly1305-reuseable</remote-id>
+    <remote-id type="github">bdraco/chacha20poly1305-reuseable</remote-id>
     <maintainer status="unknown">
-      <email>hello@home-assistant.io</email>
-      <name>The Home Assistant Authors</name>
+      <email>nick@koston.org</email>
+      <name>J. Nick Koston</name>
     </maintainer>
   </upstream>
 </pkgmetadata>
