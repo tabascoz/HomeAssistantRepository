@@ -31,27 +31,27 @@ RESTRICT="!test? ( test )"
 
 RDEPEND="server? ( acct-group/${PN} acct-user/${PN} )
 	$(python_gen_cond_dep '
-		~dev-python/cryptography-43.0.0[${PYTHON_USEDEP}]
-		~dev-python/voluptuous-0.14.2[${PYTHON_USEDEP}]
-		~dev-python/pyyaml-6.0.1[${PYTHON_USEDEP}]
-		~dev-python/paho-mqtt-1.6.1[${PYTHON_USEDEP}]
+		dev-python/cryptography[${PYTHON_USEDEP}]
+		dev-python/voluptuous[${PYTHON_USEDEP}]
+		>=dev-python/pyyaml-6.0.2[${PYTHON_USEDEP}]
+		~dev-python/paho-mqtt-2.1.0[${PYTHON_USEDEP}]
 		~dev-python/colorama-0.4.6[${PYTHON_USEDEP}]
-		~dev-python/icmplib-3.0.4[${PYTHON_USEDEP}]
-		server? ( ~dev-python/tornado-6.4.1[${PYTHON_USEDEP}] )
-		~dev-python/tzlocal-5.2[${PYTHON_USEDEP}]
+		dev-python/icmplib[${PYTHON_USEDEP}]
+		server? ( ~dev-python/tornado-6.4.2[${PYTHON_USEDEP}] )
+		dev-python/tzlocal[${PYTHON_USEDEP}]
 		>=dev-python/tzdata-2021.1[${PYTHON_USEDEP}]
 		~dev-python/pyserial-3.5[${PYTHON_USEDEP}]
-		~dev-embedded/platformio-6.1.15[${PYTHON_SINGLE_USEDEP}]
-		~dev-embedded/esptool-4.7.0[${PYTHON_SINGLE_USEDEP}]
-		~dev-python/click-8.1.7[${PYTHON_USEDEP}]
-		~dev-embedded/esphome-dashboard-20240620.0[${PYTHON_USEDEP}]
+		~dev-embedded/platformio-6.1.18[${PYTHON_SINGLE_USEDEP}]
+		~dev-embedded/esptool-4.8.1[${PYTHON_SINGLE_USEDEP}]
+		>=dev-python/click-8.1.8[${PYTHON_USEDEP}]
+		>=dev-embedded/esphome-dashboard-20250514.0[${PYTHON_USEDEP}]
 		dev-python/aioesphomeapi[${PYTHON_USEDEP}]
 		dev-python/zeroconf[${PYTHON_USEDEP}]
-		~dev-python/puremagic-1.27[${PYTHON_USEDEP}]
-		~dev-python/ruamel-yaml-0.18.6[${PYTHON_USEDEP}]
-		~dev-python/kconfiglib-13.7.1[${PYTHON_USEDEP}]
-		>=dev-python/pyparsing-3.0[${PYTHON_USEDEP}]
-		>=dev-python/argcomplete-2.0.0[${PYTHON_USEDEP}]
+		~dev-python/puremagic-1.28[${PYTHON_USEDEP}]
+		~dev-python/ruamel-yaml-0.18.10[${PYTHON_USEDEP}]
+		~dev-python/kconfiglib-14.1.0[${PYTHON_USEDEP}]
+		>=dev-python/pyparsing-3.2.1[${PYTHON_USEDEP}]
+		>=dev-python/argcomplete-3.5.3[${PYTHON_USEDEP}]
 	')"
 
 BDEPEND="$(python_gen_cond_dep '
@@ -78,9 +78,19 @@ support at https://git.edevau.net/onkelbeh/HomeAssistantRepository
 DOCS="README.md"
 
 src_prepare() {
-	# Make it easy (again)
-	cut -d "=" -f1 < requirements.txt > requirements_new.txt
-	mv requirements_new.txt requirements.txt
+	sed "/aioesphomeapi==/c\aioesphomeapi" -i requirements.txt || die
+	sed "/click==/c\click" -i requirements.txt || die
+	sed "/tornado==/c\tornado" -i requirements.txt || die
+	sed "/colorama==/c\colorama" -i requirements.txt || die
+	sed "/zeroconf==/c\zeroconf" -i requirements.txt || die
+	sed "/voluptuous==/c\voluptuous" -i requirements.txt || die
+	sed "/cryptography==/c\cryptography" -i requirements.txt || die
+	sed "/icmplib==/c\icmplib" -i requirements.txt || die
+	sed "/pyyaml==/c\pyyaml" -i requirements.txt || die
+	sed "/puremagic==/c\puremagic" -i requirements.txt || die
+
+	# esphome/components/font/__init__.py pillow version check
+#	sed "s/10.2.0/10.3.0/g" -i esphome/components/font/__init__.py || die
 	eapply_user
 }
 
