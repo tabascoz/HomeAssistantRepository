@@ -33,7 +33,7 @@ RDEPEND="
 		~dev-python/ajsonrpc-1.2.0[${PYTHON_USEDEP}]
 		>=dev-python/starlette-0.41.2[${PYTHON_USEDEP}]
 		>=dev-python/uvicorn-0.19[${PYTHON_USEDEP}]
-		<dev-python/uvicorn-0.33[${PYTHON_USEDEP}]
+		<dev-python/uvicorn-0.36[${PYTHON_USEDEP}]
 		dev-python/wsproto[${PYTHON_USEDEP}]
 		>=dev-python/pyelftools-0.27[${PYTHON_USEDEP}]
 		<dev-python/pyelftools-1[${PYTHON_USEDEP}]

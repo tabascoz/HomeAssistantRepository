@@ -7,7 +7,7 @@ EAPI=8
 # bump (>2.5.0)!
 
 PYTHON_COMPAT=( python3_{11..13} )
-DISTUTILS_USE_PEP517=
+DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 readme.gentoo-r1
 
 DESCRIPTION="A Python interactive packet manipulation program for mastering the network"
