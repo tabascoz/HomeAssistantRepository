@@ -403,7 +403,7 @@ RDEPEND="${RDEPEND}
 	epsonworkforce? ( ~dev-python/epsonprinter-0.0.9[${PYTHON_USEDEP}] )
 	eq3btsmart? ( ~dev-python/eq3btsmart-1.1.9[${PYTHON_USEDEP}] ~dev-python/bleak-esphome-2.16.0[${PYTHON_USEDEP}] )
 	escea? ( ~dev-python/pescea-1.0.12[${PYTHON_USEDEP}] )
-	esphome? ( ~dev-python/aioesphomeapi-34.0.0[${PYTHON_USEDEP}] ~dev-python/esphome-dashboard-api-1.3.0[${PYTHON_USEDEP}] ~dev-python/bleak-esphome-2.16.0[${PYTHON_USEDEP}] )
+	esphome? ( ~dev-python/aioesphomeapi-34.1.0[${PYTHON_USEDEP}] ~dev-python/esphome-dashboard-api-1.3.0[${PYTHON_USEDEP}] ~dev-python/bleak-esphome-2.16.0[${PYTHON_USEDEP}] )
 	essent? ( ~dev-python/PyEssent-0.14[${PYTHON_USEDEP}] )
 	etherscan? ( ~dev-python/python-etherscan-api-0.0.3[${PYTHON_USEDEP}] )
 	eufy? ( ~dev-python/lakeside-0.13[${PYTHON_USEDEP}] )

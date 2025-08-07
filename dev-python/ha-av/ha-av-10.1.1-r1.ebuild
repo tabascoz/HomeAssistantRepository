@@ -21,7 +21,7 @@ RESTRICT="test"
 DOCS="README.md"
 
 RDEPEND="!dev-python/av
-	=media-video/ffmpeg-6.1.2-r2
+	<media-video/ffmpeg-7.1.1-r2
 	dev-python/ha-ffmpeg[${PYTHON_USEDEP}]
 	"
 BDEPEND="dev-python/cython[${PYTHON_USEDEP}]
