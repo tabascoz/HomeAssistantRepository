@@ -30,12 +30,8 @@ RDEPEND="
 	>=dev-python/pytest-7.4.3[${PYTHON_USEDEP}]
 	>=dev-python/pytest-asyncio-0.21.1[${PYTHON_USEDEP}]
 	dev-python/pytest-cov[${PYTHON_USEDEP}]
-	>=dev-util/ruff-0.1.9[${PYTHON_USEDEP}]
+	>=dev-util/ruff-0.1.9
 	>=dev-python/starlette-0.27.0[${PYTHON_USEDEP}]
-
-	
-	
-	
 "
 
 distutils_enable_tests pytest
