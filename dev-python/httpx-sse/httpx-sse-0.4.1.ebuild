@@ -23,15 +23,7 @@ SLOT="0"
 KEYWORDS="~alpha amd64 arm arm64 hppa ~ia64 ~loong ~mips ppc ppc64 ~riscv ~s390 sparc x86"
 
 RDEPEND="
-	dev-python/httpcore[${PYTHON_USEDEP}]
-	>=dev-python/black-23.12.0[${PYTHON_USEDEP}]
 	>=dev-python/httpx-0.26.0[${PYTHON_USEDEP}]
-	>=dev-python/mypy-1.8.0[${PYTHON_USEDEP}]
-	>=dev-python/pytest-7.4.3[${PYTHON_USEDEP}]
-	>=dev-python/pytest-asyncio-0.21.1[${PYTHON_USEDEP}]
-	dev-python/pytest-cov[${PYTHON_USEDEP}]
-	>=dev-util/ruff-0.1.9
-	>=dev-python/starlette-0.27.0[${PYTHON_USEDEP}]
 "
 
 distutils_enable_tests pytest
