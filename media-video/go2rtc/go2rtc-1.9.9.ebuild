@@ -1,4 +1,4 @@
-# Copyright 1999-2024 Gentoo Authors
+# Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -18,13 +18,13 @@ KEYWORDS="~amd64 ~x86"
 RDEPEND="
 	acct-group/go2rtc
 	acct-user/go2rtc
-	media-video/ffmpeg[encode,x264,x265,opus]
+	media-video/ffmpeg[x264,x265,opus]
 "
 
 DOCS=(README.md)
 
 src_configure() {
-	export CGO_ENABLED=1
+	export CGO_ENABLED=0
 	export CGO_CFLAGS="${CFLAGS}"
 	export CGO_CPPFLAGS="${CPPFLAGS}"
 	export CGO_CXXFLAGS="${CXXFLAGS}"
