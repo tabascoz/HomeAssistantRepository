@@ -154,6 +154,7 @@ RDEPEND="${RDEPEND}
 	dev-python/tinytuya[${PYTHON_USEDEP}]
 	dev-python/spotifyaio[${PYTHON_USEDEP}]
 	dev-python/annotatedyaml[${PYTHON_USEDEP}]
+	=dev-python/sentence-stream-1.1.0[${PYTHON_USEDEP}]
 	"
 
 # unknown origin, still something to clean up here
