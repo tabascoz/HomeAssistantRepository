@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{10..12} )
+PYTHON_COMPAT=( python3_{10..13} )
 DISTUTILS_USE_PEP517=setuptools
 PYPI_NO_NORMALIZE=1
 DISTUTILS_EXT=1
@@ -21,7 +21,7 @@ RESTRICT="test"
 DOCS="README.md"
 
 RDEPEND="!dev-python/av
-	>=media-video/ffmpeg-7.1:=[network]
+	<media-video/ffmpeg-7.1.1-r2
 	dev-python/ha-ffmpeg[${PYTHON_USEDEP}]
 	"
 BDEPEND="dev-python/cython[${PYTHON_USEDEP}]
