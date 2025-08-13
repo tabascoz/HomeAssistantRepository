@@ -32,30 +32,35 @@ RESTRICT="!test? ( test )"
 
 RDEPEND="server? ( acct-group/${PN} acct-user/${PN} )
 	$(python_gen_cond_dep '
-		dev-python/cryptography[${PYTHON_USEDEP}]
-		dev-python/voluptuous[${PYTHON_USEDEP}]
-		>=dev-python/pyyaml-6.0.2[${PYTHON_USEDEP}]
-		~dev-python/paho-mqtt-2.1.0[${PYTHON_USEDEP}]
+		~dev-python/cryptography-45.0.6[${PYTHON_USEDEP}]
+		~dev-python/voluptuous-0.15.2[${PYTHON_USEDEP}]
+		~dev-python/pyyaml-6.0.2[${PYTHON_USEDEP}]
+		>=dev-python/paho-mqtt-1.6.1[${PYTHON_USEDEP}]
 		~dev-python/colorama-0.4.6[${PYTHON_USEDEP}]
-		dev-python/icmplib[${PYTHON_USEDEP}]
-		server? ( ~dev-python/tornado-6.4.2[${PYTHON_USEDEP}] )
+		~dev-python/icmplib-3.0.4[${PYTHON_USEDEP}]
+		server? ( ~dev-python/tornado-6.5.2[${PYTHON_USEDEP}] )
 		dev-python/tzlocal[${PYTHON_USEDEP}]
 		>=dev-python/tzdata-2021.1[${PYTHON_USEDEP}]
 		~dev-python/pyserial-3.5[${PYTHON_USEDEP}]
 		~dev-embedded/platformio-6.1.18[${PYTHON_SINGLE_USEDEP}]
 		~dev-embedded/esptool-5.0.1[${PYTHON_SINGLE_USEDEP}]
-		<=dev-python/click-8.1.8[${PYTHON_USEDEP}]
-		~dev-python/rich-click-1.8.9[${PYTHON_USEDEP}]
-		>=dev-embedded/esphome-dashboard-20250514.0[${PYTHON_USEDEP}]
+		~dev-python/click-8.1.8[${PYTHON_USEDEP}]
+		=dev-embedded/esphome-dashboard-20250514.0[${PYTHON_USEDEP}]
 		dev-python/aioesphomeapi[${PYTHON_USEDEP}]
 		dev-python/zeroconf[${PYTHON_USEDEP}]
-		~dev-python/puremagic-1.28[${PYTHON_USEDEP}]
+		~dev-python/puremagic-1.30[${PYTHON_USEDEP}]
 		~dev-python/ruamel-yaml-0.18.10[${PYTHON_USEDEP}]
+		~dev-embedded/esphome-glyphsets-0.2.0[${PYTHON_USEDEP}]
+		~dev-python/pillow-11.3.0[${PYTHON_USEDEP}]
+		~media-gfx/cairosvg-2.8.2[${PYTHON_USEDEP}]
+		~dev-python/freetype-py-2.5.1[${PYTHON_USEDEP}]
+		~dev-python/jinja2-3.1.6[${PYTHON_USEDEP}]
 		~dev-python/kconfiglib-14.1.0[${PYTHON_USEDEP}]
-		>=dev-python/pyparsing-3.2.1[${PYTHON_USEDEP}]
-		>=dev-python/argcomplete-3.5.3[${PYTHON_USEDEP}]
+		>=dev-python/pyparsing-3.0[${PYTHON_USEDEP}]
+		>=dev-python/argcomplete-2.0.0[${PYTHON_USEDEP}]
 	')"
-
+		#~dev-python/rich-click-1.8.9[${PYTHON_USEDEP}]
+		
 BDEPEND="$(python_gen_cond_dep '
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (

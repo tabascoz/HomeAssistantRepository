@@ -52,11 +52,11 @@ RDEPEND="${RDEPEND}
 	~dev-python/aiodns-3.5.0[${PYTHON_USEDEP}]
 	~dev-python/aiohasupervisor-0.3.1[${PYTHON_USEDEP}]
 	~dev-python/aiohttp-fast-zlib-0.3.0[${PYTHON_USEDEP}]
-	~dev-python/aiohttp-3.12.14[${PYTHON_USEDEP}]
+	~dev-python/aiohttp-3.12.15[${PYTHON_USEDEP}]
 	~dev-python/aiohttp-cors-0.8.1[${PYTHON_USEDEP}]
 	~dev-python/aiohttp-asyncmdnsresolver-0.1.1[${PYTHON_USEDEP}]
 	~dev-python/aiozoneinfo-0.2.3[${PYTHON_USEDEP}]
-	~dev-python/anyio-4.9.0[${PYTHON_USEDEP}]
+	~dev-python/anyio-4.10.0[${PYTHON_USEDEP}]
 	~dev-python/astral-2.2[${PYTHON_USEDEP}]
 	~dev-python/async-interrupt-1.2.2[${PYTHON_USEDEP}]
 	~dev-python/async-upnp-client-0.45.0[${PYTHON_USEDEP}]
@@ -87,7 +87,7 @@ RDEPEND="${RDEPEND}
 	dev-python/h11[${PYTHON_USEDEP}]
 	~dev-python/ha-av-10.1.1-r1[${PYTHON_USEDEP}]
 	~dev-python/ha-ffmpeg-3.2.2[${PYTHON_USEDEP}]
-	~dev-python/habluetooth-5.0.1[${PYTHON_USEDEP}]
+	~dev-python/habluetooth-5.0.2[${PYTHON_USEDEP}]
 	~dev-python/hass-nabucasa-0.111.1[${PYTHON_USEDEP}]
 	~dev-python/hassil-2.2.3[${PYTHON_USEDEP}]
 	~dev-python/home-assistant-bluetooth-2.0.0[${PYTHON_USEDEP}]
@@ -260,7 +260,7 @@ RDEPEND="${RDEPEND}
 	blockchain? ( ~dev-python/python-blockchain-api-0.0.2[${PYTHON_USEDEP}] )
 	bluemaestro? ( ~dev-python/bluemaestro-ble-0.2.3[${PYTHON_USEDEP}] )
 	bluesound? ( ~dev-python/pyblu-1.0.4[${PYTHON_USEDEP}] )
-	bluetooth? ( ~dev-python/bleak-1.0.1[${PYTHON_USEDEP}] ~dev-python/bleak-retry-connector-4.0.0[${PYTHON_USEDEP}] ~dev-python/bluetooth-adapters-2.0.0[${PYTHON_USEDEP}] ~dev-python/bluetooth-auto-recovery-1.5.2[${PYTHON_USEDEP}] ~dev-python/bluetooth-data-tools-1.28.2[${PYTHON_USEDEP}] ~dev-python/dbus-fast-2.44.3[${PYTHON_USEDEP}] ~dev-python/habluetooth-5.0.1[${PYTHON_USEDEP}] ~dev-python/aiousbwatcher-1.1.1[${PYTHON_USEDEP}]   )
+	bluetooth? ( ~dev-python/bleak-1.0.1[${PYTHON_USEDEP}] ~dev-python/bleak-retry-connector-4.0.0[${PYTHON_USEDEP}] ~dev-python/bluetooth-adapters-2.0.0[${PYTHON_USEDEP}] ~dev-python/bluetooth-auto-recovery-1.5.2[${PYTHON_USEDEP}] ~dev-python/bluetooth-data-tools-1.28.2[${PYTHON_USEDEP}] ~dev-python/dbus-fast-2.44.3[${PYTHON_USEDEP}] ~dev-python/habluetooth-5.0.2[${PYTHON_USEDEP}] ~dev-python/aiousbwatcher-1.1.1[${PYTHON_USEDEP}]   )
 	bluetooth_le_tracker? ( ~dev-python/pygatt-4.0.5[${PYTHON_USEDEP}] )
 	bluetooth_tracker? ( ~dev-python/bt-proximity-0.2.1[${PYTHON_USEDEP}] ~dev-python/pybluez-0.22[${PYTHON_USEDEP}] )
 	blue_current? ( ~dev-python/bluecurrent-api-1.2.3[${PYTHON_USEDEP}] )
