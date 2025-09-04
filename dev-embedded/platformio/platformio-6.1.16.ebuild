@@ -1,11 +1,11 @@
-# Copyright 1999-2024 Gentoo Authors
+# Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
 DISTUTILS_SINGLE_IMPL=1
 DISTUTILS_USE_PEP517=setuptools
-PYTHON_COMPAT=( python3_{11..13} )
+PYTHON_COMPAT=( pypy3_11 python3_{11..14} )
 
 inherit distutils-r1 udev
 
@@ -20,7 +20,7 @@ KEYWORDS="amd64 arm arm64 x86"
 
 RDEPEND="
 	$(python_gen_cond_dep '
-		~dev-python/bottle-0.12.25[${PYTHON_USEDEP}]
+		>=dev-python/bottle-0.13.0[${PYTHON_USEDEP}]
 		>=dev-python/click-8.0.4[${PYTHON_USEDEP}]
 		<dev-python/click-9[${PYTHON_USEDEP}]
 		dev-python/colorama[${PYTHON_USEDEP}]
@@ -31,9 +31,10 @@ RDEPEND="
 		<dev-python/semantic-version-3[${PYTHON_USEDEP}]
 		<dev-python/tabulate-1[${PYTHON_USEDEP}]
 		~dev-python/ajsonrpc-1.2.0[${PYTHON_USEDEP}]
-		>=dev-python/starlette-0.41.2[${PYTHON_USEDEP}]
+		>=dev-python/starlette-0.19[${PYTHON_USEDEP}]
+		<dev-python/starlette-0.40[${PYTHON_USEDEP}]
 		>=dev-python/uvicorn-0.19[${PYTHON_USEDEP}]
-		<dev-python/uvicorn-0.33[${PYTHON_USEDEP}]
+		<dev-python/uvicorn-0.30[${PYTHON_USEDEP}]
 		dev-python/wsproto[${PYTHON_USEDEP}]
 		>=dev-python/pyelftools-0.27[${PYTHON_USEDEP}]
 		<dev-python/pyelftools-1[${PYTHON_USEDEP}]

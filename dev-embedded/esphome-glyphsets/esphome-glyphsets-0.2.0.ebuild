@@ -5,26 +5,17 @@ EAPI=8
 
 PYTHON_COMPAT=( pypy3_11 python3_{11..14} )
 DISTUTILS_USE_PEP517=setuptools
-PYPI_NO_NORMALIZE=1
 inherit distutils-r1 pypi
-DESCRIPTION="Python Wireless Library"
-HOMEPAGE="http://wraith-wireless.github.io/PyRIC/ https://pypi.org/project/PyRIC/"
 
-LICENSE="GPL-3"
+DESCRIPTION="A lightweight version of glyphsets for ESPHome"
+HOMEPAGE="https://pypi.org/project/esphome-glyphsets/ https://github.com/esphome/esphome-glyphsets/"
+
+LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
 DOCS="README.md"
-
-BDEPEND="
-	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
-	)"
-
-python_test() {
-	py.test -v -v || die
-}
 
 distutils_enable_tests pytest

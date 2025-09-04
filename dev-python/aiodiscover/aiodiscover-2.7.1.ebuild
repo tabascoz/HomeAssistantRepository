@@ -18,8 +18,7 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/async-timeout-4.0.1[${PYTHON_USEDEP}]
-	>=dev-python/netifaces-0.11.0[${PYTHON_USEDEP}]
+RDEPEND=">=dev-python/netifaces-0.11.0[${PYTHON_USEDEP}]
 	>=dev-python/aiodns-3.1.1[${PYTHON_USEDEP}]
 	dev-python/ifaddr[${PYTHON_USEDEP}]
 	>=dev-python/pyroute2-0.7.3[${PYTHON_USEDEP}]
