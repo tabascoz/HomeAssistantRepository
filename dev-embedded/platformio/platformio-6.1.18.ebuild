@@ -22,6 +22,7 @@ RDEPEND="
 	$(python_gen_cond_dep '
 		>=dev-python/bottle-0.13.0[${PYTHON_USEDEP}]
 		>=dev-python/click-8.0.4[${PYTHON_USEDEP}]
+		<dev-python/click-9[${PYTHON_USEDEP}]
 		dev-python/colorama[${PYTHON_USEDEP}]
 		~dev-python/marshmallow-3.21.1[${PYTHON_USEDEP}]
 		>=dev-python/pyelftools-0.27[${PYTHON_USEDEP}]
@@ -34,7 +35,7 @@ RDEPEND="
 		~dev-python/ajsonrpc-1.2.0[${PYTHON_USEDEP}]
 		>=dev-python/starlette-0.19[${PYTHON_USEDEP}]
 		<dev-python/starlette-0.48[${PYTHON_USEDEP}]
-		>=dev-python/uvicorn-0.16[${PYTHON_USEDEP}]
+		>=dev-python/uvicorn-0.19[${PYTHON_USEDEP}]
 		<dev-python/uvicorn-0.36[${PYTHON_USEDEP}]
 		dev-python/wsproto[${PYTHON_USEDEP}]
 	')

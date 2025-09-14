@@ -33,7 +33,9 @@ BDEPEND="
 	test? (
 		>=dev-python/blockbuster-1.5.23[${PYTHON_USEDEP}]
 		>=dev-python/exceptiongroup-1.2.0[${PYTHON_USEDEP}]
+		>=dev-python/hypothesis-4.0[${PYTHON_USEDEP}]
 		>=dev-python/psutil-5.9[${PYTHON_USEDEP}]
+		>=dev-python/pytest-mock-3.6.1[${PYTHON_USEDEP}]
 		dev-python/trustme[${PYTHON_USEDEP}]
 		$(python_gen_cond_dep '
 			>=dev-python/trio-0.26.1[${PYTHON_USEDEP}]

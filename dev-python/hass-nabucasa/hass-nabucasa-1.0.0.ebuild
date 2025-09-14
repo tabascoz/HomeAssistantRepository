@@ -32,7 +32,7 @@ RDEPEND="
 	>=dev-python/snitun-0.44.0[${PYTHON_USEDEP}]
 	<dev-python/webrtc-models-1.0.0[${PYTHON_USEDEP}]
 	>=dev-python/yarl-1.20[${PYTHON_USEDEP}]
-	~dev-python/sentence-stream-1.1.0[${PYTHON_USEDEP}]"
+	dev-python/sentence-stream[${PYTHON_USEDEP}]"
 
 BDEPEND="
 	test? (

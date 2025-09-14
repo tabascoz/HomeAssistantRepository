@@ -5,7 +5,7 @@ EAPI=8
 
 MY_PN=${PN/-/_}
 MY_P=${MY_PN}-${PV}
-PYTHON_COMPAT=( python3_{11..12} )
+PYTHON_COMPAT=( python3_{11..14} )
 DISTUTILS_USE_PEP517=setuptools
 
 inherit distutils-r1
