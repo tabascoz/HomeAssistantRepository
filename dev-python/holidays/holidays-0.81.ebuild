@@ -5,13 +5,17 @@ EAPI=8
 
 PYTHON_COMPAT=( pypy3_11 python3_{11..14} )
 DISTUTILS_USE_PEP517=setuptools
-PYPI_NO_NORMALIZE=1
 inherit distutils-r1 pypi
 
-DESCRIPTION="ESPHome dashboard"
-HOMEPAGE="https://github.com/esphome/dashboard https://pypi.org/project/esphome-dashboard/"
+DESCRIPTION="Generate and work with holidays in Python"
+HOMEPAGE="https://github.com/vacanza/holidays https://pypi.org/project/holidays/"
 
-LICENSE="Apache-2.0"
+LICENSE="MIT"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
+IUSE="test"
+RESTRICT="!test? ( test )"
+
 DOCS="README.md"
+
+RDEPEND="dev-python/python-dateutil[${PYTHON_USEDEP}]"
