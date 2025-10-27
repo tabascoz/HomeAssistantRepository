@@ -4,11 +4,11 @@
 EAPI=8
 
 PYTHON_COMPAT=( pypy3_11 python3_{11..14} )
-DISTUTILS_USE_PEP517=setuptools
+DISTUTILS_USE_PEP517=poetry
 inherit distutils-r1 pypi
 
-DESCRIPTION="Python iCalendar implementation (rfc 2445)"
-HOMEPAGE="https://github.com/allenporter/ical https://pypi.org/project/ical/"
+DESCRIPTION="Annotated YAML that supports secrets for Python"
+HOMEPAGE="https://github.com/home-assistant-libs/annotatedyaml/ https://pypi.org/project/annotatedyaml/"
 
 LICENSE="Apache-2.0"
 SLOT="0"
@@ -18,8 +18,8 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/python-dateutil-2.8.2[${PYTHON_USEDEP}]
-	>=dev-python/tzdata-2023.3[${PYTHON_USEDEP}]
-	>=dev-python/pydantic-2.12.3[${PYTHON_USEDEP}]"
+RDEPEND="dev-python/propcache[${PYTHON_USEDEP}]
+	dev-python/pyyaml[${PYTHON_USEDEP}]
+	dev-python/voluptuous[${PYTHON_USEDEP}]"
 
 distutils_enable_tests pytest

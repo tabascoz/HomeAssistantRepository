@@ -20,7 +20,7 @@ RESTRICT="!test? ( test )"
 DOCS="README.md"
 
 RDEPEND=">=dev-python/aiohttp-3.8.1[${PYTHON_USEDEP}]
-	>=dev-python/pydantic-1.9.0[${PYTHON_USEDEP}]
+	>=dev-python/pydantic-2.12.3[${PYTHON_USEDEP}]
 	>=dev-python/ical-6.1.0[${PYTHON_USEDEP}]"
 
 distutils_enable_tests pytest
