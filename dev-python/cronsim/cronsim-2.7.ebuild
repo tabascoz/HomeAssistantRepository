@@ -6,8 +6,10 @@ EAPI=8
 PYTHON_COMPAT=( python3_{11..13} )
 DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 pypi
-DESCRIPTION="Pythonic bindings for FFmpeg's libraries."
-HOMEPAGE="https://github.com/PyAV-Org/PyAV https://pypi.org/project/av/"
+
+DESCRIPTION="Cron expression parser and evaluator"
+HOMEPAGE="https://github.com/cuu508/cronsim https://pypi.org/project/cronsim/"
+SRC_URI="https://github.com/cuu508/cronsim/archive/refs/tags/${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="BSD"
 SLOT="0"
@@ -16,9 +18,4 @@ IUSE="test"
 RESTRICT="!test? ( test )"
 
 DOCS="README.md"
-
-RDEPEND="!dev-python/ha-av
-	=media-video/ffmpeg-7.1.2
-	dev-python/ha-ffmpeg[${PYTHON_USEDEP}]"
-
 distutils_enable_tests pytest
