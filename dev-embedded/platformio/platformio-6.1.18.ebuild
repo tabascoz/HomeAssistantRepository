@@ -34,9 +34,9 @@ RDEPEND="
 		<dev-python/tabulate-1[${PYTHON_USEDEP}]
 		~dev-python/ajsonrpc-1.2.0[${PYTHON_USEDEP}]
 		>=dev-python/starlette-0.19[${PYTHON_USEDEP}]
-		<dev-python/starlette-0.48[${PYTHON_USEDEP}]
-		>=dev-python/uvicorn-0.19[${PYTHON_USEDEP}]
-		<dev-python/uvicorn-0.36[${PYTHON_USEDEP}]
+		<dev-python/starlette-0.51[${PYTHON_USEDEP}]
+		>=dev-python/uvicorn-0.16[${PYTHON_USEDEP}]
+		<dev-python/uvicorn-0.39[${PYTHON_USEDEP}]
 		dev-python/wsproto[${PYTHON_USEDEP}]
 	')
 	virtual/udev"
