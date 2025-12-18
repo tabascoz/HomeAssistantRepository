@@ -26,15 +26,15 @@ HOMEPAGE="https://github.com/esphome/esphome https://pypi.org/project/esphome/"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="amd64 arm arm64 x86"
+KEYWORDS="~amd64 ~arm ~arm64 ~x86"
 IUSE="+server test"
 RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
 RDEPEND="
-	server? ( acct-group/${PN} acct-user/${PN} )
 	$(python_gen_cond_dep '
+	        server? ( ~dev-embedded/esphome-dashboard-20251013.0[${PYTHON_USEDEP}] )
 		>=dev-python/cryptography-45.0.1[${PYTHON_USEDEP}]
 		~dev-python/voluptuous-0.15.2[${PYTHON_USEDEP}]
 		>=dev-python/pyyaml-6.0.3[${PYTHON_USEDEP}]
@@ -48,7 +48,6 @@ RDEPEND="
 		~dev-embedded/platformio-6.1.18[${PYTHON_SINGLE_USEDEP}]
 		~dev-embedded/esptool-5.1.0[${PYTHON_SINGLE_USEDEP}]
 		dev-python/click[${PYTHON_USEDEP}]
-		~dev-embedded/esphome-dashboard-20251013.0[${PYTHON_USEDEP}]
 		dev-python/aioesphomeapi[${PYTHON_USEDEP}]
 		dev-python/zeroconf[${PYTHON_USEDEP}]
 		~dev-python/puremagic-1.30[${PYTHON_USEDEP}]
