@@ -3,9 +3,8 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{11..13} )
+PYTHON_COMPAT=( python3_{11..14} )
 DISTUTILS_USE_PEP517=setuptools
-PYPI_NO_NORMALIZE=1
 inherit distutils-r1 pypi
 
 DESCRIPTION="Standard Protobuf Reflection Service for gRPC"
@@ -20,7 +19,7 @@ RESTRICT="!test? ( test )"
 DOCS="README.rst"
 
 RDEPEND=">=dev-python/grpcio-${PV}[${PYTHON_USEDEP}]
-	>=dev-python/protobuf-4.21.6"
+	>=dev-python/protobuf-5.26.1[${PYTHON_USEDEP}]"
 BDEPEND="
 	>=dev-python/cython-3[${PYTHON_USEDEP}]
 	test? (

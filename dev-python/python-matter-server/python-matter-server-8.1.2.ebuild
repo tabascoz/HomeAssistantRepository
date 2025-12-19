@@ -20,9 +20,12 @@ DOCS="README.md"
 
 RDEPEND="dev-python/aiohttp[${PYTHON_USEDEP}]
 	dev-python/aiorun[${PYTHON_USEDEP}]
+	|| ( ~dev-python/atomicwrites-1.4.1[${PYTHON_USEDEP}] ~dev-python/atomicwrites-homeassistant-1.4.1[${PYTHON_USEDEP}] )
 	dev-python/coloredlogs[${PYTHON_USEDEP}]
+	dev-python/cryptography[${PYTHON_USEDEP}]
 	dev-python/orjson[${PYTHON_USEDEP}]
-	~dev-python/home-assistant-chip-clusters-2024.5.2[${PYTHON_USEDEP}]"
+	dev-python/zeroconf[${PYTHON_USEDEP}]
+	~dev-python/home-assistant-chip-clusters-2025.7.0[${PYTHON_USEDEP}]"
 BDEPEND="
 	test? (
 		dev-python/pytest-aiohttp[${PYTHON_USEDEP}]

@@ -34,7 +34,7 @@ RDEPEND="
 "
 
 # Optional / extra dependencies (enabled via USE flags)
-IUSE="proxy server ui extra"
+IUSE="proxy server ui -extra"
 
 RDEPEND+="
     proxy? (
