@@ -22,7 +22,7 @@ RDEPEND="
 	$(python_gen_cond_dep '
 		>=dev-python/aiofiles-22.1[${PYTHON_USEDEP}]
 		dev-python/ajsonrpc[${PYTHON_USEDEP}]
-		<dev-python/bottle-0.13[${PYTHON_USEDEP}]
+		~dev-python/bottle-0.13.4[${PYTHON_USEDEP}]
 		=dev-python/click-8*[${PYTHON_USEDEP}]
 		dev-python/colorama[${PYTHON_USEDEP}]
 		>=dev-python/pyserial-3[${PYTHON_USEDEP}]
