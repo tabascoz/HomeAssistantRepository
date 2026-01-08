@@ -669,7 +669,7 @@ RDEPEND="${RDEPEND}
 	marytts? ( ~dev-python/speak2mary-1.5.0[${PYTHON_USEDEP}] )
 	mastodon? ( ~dev-python/Mastodon-py-1.8.1[${PYTHON_USEDEP}] )
 	matrix? ( ~dev-python/matrix-nio-0.25.2[${PYTHON_USEDEP}] dev-python/pillow[${PYTHON_USEDEP}] )
-	matter? ( ~dev-python/python-matter-server-8.1.2[${PYTHON_USEDEP}] )
+	matter? ( ~dev-python/python-matter-server-8.1.2[${PYTHON_USEDEP}] ~dev-python/dacite-1.9.2[${PYTHON_USEDEP}]  )
 	maxcube? ( ~dev-python/maxcube-api-0.4.3[${PYTHON_USEDEP}] )
 	mcp23017? ( ~dev-python/RPi-GPIO-0.7.1_alpha4[${PYTHON_USEDEP}] ~dev-python/adafruit-circuitpython-mcp230xx-2.2.2[${PYTHON_USEDEP}] )
 	mcp_server? ( ~dev-python/aiohttp_sse-2.2.0[${PYTHON_USEDEP}] )
