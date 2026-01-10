@@ -49,10 +49,10 @@ RDEPEND="${RDEPEND}
 	>=dev-python/aiofiles-24.1.0[${PYTHON_USEDEP}]
 	~dev-python/aiohttp-fast-zlib-0.3.0[${PYTHON_USEDEP}]
 	~dev-python/aiohttp-asyncmdnsresolver-0.1.1[${PYTHON_USEDEP}]
-	~dev-python/aiohttp-3.13.2[${PYTHON_USEDEP}]
+	~dev-python/aiohttp-3.13.3[${PYTHON_USEDEP}]
 	~dev-python/aiohttp-cors-0.8.1[${PYTHON_USEDEP}]
 	~dev-python/aiozoneinfo-0.2.3[${PYTHON_USEDEP}]
-	~dev-python/anyio-4.12.0[${PYTHON_USEDEP}]
+	~dev-python/anyio-4.12.1[${PYTHON_USEDEP}]
 	~dev-python/astral-2.2[${PYTHON_USEDEP}]
 	~dev-python/async-interrupt-1.2.2[${PYTHON_USEDEP}]
 	~dev-python/async-timeout-5.0.1[${PYTHON_USEDEP}]
@@ -65,7 +65,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/bcrypt-5.0.0[${PYTHON_USEDEP}]
 	~dev-python/bleak-retry-connector-4.4.4[${PYTHON_USEDEP}]
 	~dev-python/bleak-2.1.1[${PYTHON_USEDEP}]
-	~dev-python/bluetooth-adapters-2.1.0[${PYTHON_USEDEP}]
+	~dev-python/bluetooth-adapters-2.1.1[${PYTHON_USEDEP}]
 	~dev-python/bluetooth-auto-recovery-1.5.3[${PYTHON_USEDEP}]
 	~dev-python/bluetooth-data-tools-1.28.4[${PYTHON_USEDEP}]
 	~dev-python/cached-ipaddress-1.0.1[${PYTHON_USEDEP}]
@@ -256,7 +256,7 @@ RDEPEND="${RDEPEND}
 	blue_current? ( ~dev-python/bluecurrent-api-1.3.2[${PYTHON_USEDEP}] )
 	bluemaestro? ( ~dev-python/bluemaestro-ble-0.2.3[${PYTHON_USEDEP}] )
 	bluesound? ( ~dev-python/pyblu-2.0.5[${PYTHON_USEDEP}] )
-	bluetooth? ( ~dev-python/bleak-2.1.1[${PYTHON_USEDEP}] ~dev-python/bleak-retry-connector-4.4.4[${PYTHON_USEDEP}] ~dev-python/bluetooth-adapters-2.1.0[${PYTHON_USEDEP}] ~dev-python/bluetooth-auto-recovery-1.5.3[${PYTHON_USEDEP}] ~dev-python/bluetooth-data-tools-1.28.4[${PYTHON_USEDEP}] ~dev-python/dbus-fast-3.1.2[${PYTHON_USEDEP}] ~dev-python/habluetooth-5.8.0[${PYTHON_USEDEP}] )
+	bluetooth? ( ~dev-python/bleak-2.1.1[${PYTHON_USEDEP}] ~dev-python/bleak-retry-connector-4.4.4[${PYTHON_USEDEP}] ~dev-python/bluetooth-adapters-2.1.1[${PYTHON_USEDEP}] ~dev-python/bluetooth-auto-recovery-1.5.3[${PYTHON_USEDEP}] ~dev-python/bluetooth-data-tools-1.28.4[${PYTHON_USEDEP}] ~dev-python/dbus-fast-3.1.2[${PYTHON_USEDEP}] ~dev-python/habluetooth-5.8.0[${PYTHON_USEDEP}] )
 	bluetooth_le_tracker? ( ~dev-python/pygatt-4.0.5[${PYTHON_USEDEP}] )
 	bme280? ( ~dev-python/i2csense-0.0.4[${PYTHON_USEDEP}] ~dev-python/smbus-cffi-0.5.1[${PYTHON_USEDEP}] ~dev-python/bme280spi-0.2.0[${PYTHON_USEDEP}] )
 	bme680? ( ~dev-python/bme680-1.0.5[${PYTHON_USEDEP}] ~dev-python/smbus-cffi-0.5.1[${PYTHON_USEDEP}] )
