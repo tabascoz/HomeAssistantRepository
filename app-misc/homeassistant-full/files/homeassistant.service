@@ -6,6 +6,13 @@ After=network-online.target
 ExecStart=/usr/bin/hass --skip-pip --log-no-color --log-rotate-days 9 --log-file /var/log/homeassistant/warnings.log --config /etc/homeassistant
 Group=homeassistant
 User=homeassistant
+Environment="LD_PRELOAD=/usr/lib64/libjemalloc.so.2"
+AmbientCapabilities=CAP_NET_ADMIN CAP_NET_RAW
+CapabilityBoundingSet=CAP_NET_ADMIN CAP_NET_RAW CAP_SETGID CAP_SETUID
+Nice=-5
+IOSchedulingClass=best-effort
+IOSchedulingPriority=0
+
 
 [Install]
 WantedBy=multi-user.target
