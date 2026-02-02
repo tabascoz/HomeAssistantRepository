@@ -1064,7 +1064,7 @@ RDEPEND="${RDEPEND}
 	synology_dsm? ( ~dev-python/py-synologydsm-api-2.5.3[${PYTHON_USEDEP}] )
 	synology_srm? ( ~dev-python/synology-srm-0.2.0[${PYTHON_USEDEP}] )
 	system_bridge? ( ~dev-python/systembridgeconnector-5.3.1[${PYTHON_USEDEP}] ~dev-python/systembridgemodels-4.2.4[${PYTHON_USEDEP}] )
-	systemmonitor? ( ~dev-python/psutil-home-assistant-0.0.1[${PYTHON_USEDEP}] ~dev-python/psutil-7.1.2[${PYTHON_USEDEP}] )
+	systemmonitor? ( ~dev-python/psutil-home-assistant-0.0.1[${PYTHON_USEDEP}] ~dev-python/psutil-7.1.3[${PYTHON_USEDEP}] )
 	tado? ( ~dev-python/pytado-0.18.16[${PYTHON_USEDEP}] )
 	tahoma? ( ~dev-python/tahoma-api-0.0.16[${PYTHON_USEDEP}] )
 	tailscale? ( ~dev-python/tailscale-0.6.1[${PYTHON_USEDEP}] )

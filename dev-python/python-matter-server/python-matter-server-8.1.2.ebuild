@@ -27,6 +27,7 @@ RDEPEND="
 	dev-python/coloredlogs[${PYTHON_USEDEP}]
 	dev-python/cryptography[${PYTHON_USEDEP}]
 	dev-python/orjson[${PYTHON_USEDEP}]
+	dev-python/dacite[${PYTHON_USEDEP}]
 	dev-python/zeroconf[${PYTHON_USEDEP}]
 	~dev-python/home-assistant-chip-core-2025.7.0[${PYTHON_USEDEP}]
 	~dev-python/ecdsa-0.19.1[${PYTHON_USEDEP}]
