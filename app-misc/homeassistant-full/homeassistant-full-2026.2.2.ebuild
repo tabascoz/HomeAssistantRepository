@@ -873,7 +873,7 @@ RDEPEND="${RDEPEND}
 	prana? ( ~dev-python/prana-api-client-0.10.0[${PYTHON_USEDEP}] )  
 	private_ble_device? ( ~dev-python/bluetooth-data-tools-1.28.4[${PYTHON_USEDEP}] )
 	probe_plus? ( ~dev-python/pyprobeplus-1.1.2[${PYTHON_USEDEP}] )
-	profiler? ( ~dev-python/pyprof2calltree-1.4.5[${PYTHON_USEDEP}] ~dev-python/guppy3-3.1.6[${PYTHON_USEDEP}] ~dev-python/objgraph-3.5.0[${PYTHON_USEDEP}] )
+	profiler? ( ~dev-python/pyprof2calltree-1.4.5[${PYTHON_USEDEP}] ~dev-python/guppy3-3.1.6[${PYTHON_USEDEP}] ~dev-python/objgraph-3.6.2[${PYTHON_USEDEP}] )
 	progettihwsw? ( ~dev-python/ProgettiHWSW-0.1.3[${PYTHON_USEDEP}] )
 	proliphix? ( ~dev-python/proliphix-0.4.1[${PYTHON_USEDEP}] )
 	prometheus? ( ~dev-python/prometheus-client-0.21.0[${PYTHON_USEDEP}] )
