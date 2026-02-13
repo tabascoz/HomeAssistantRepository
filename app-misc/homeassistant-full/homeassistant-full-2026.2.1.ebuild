@@ -54,6 +54,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/aiodhcpwatcher-1.2.1[${PYTHON_USEDEP}]
 	~dev-python/aiodiscover-2.7.1[${PYTHON_USEDEP}]
 	~dev-python/aiodns-4.0.0[${PYTHON_USEDEP}]
+	~dev-python/aiogithubapi-24.6.0[${PYTHON_USEDEP}]
 	~dev-python/aiohasupervisor-0.3.3[${PYTHON_USEDEP}]
 	>=dev-python/aiofiles-24.1.0[${PYTHON_USEDEP}]
 	~dev-python/aiohttp-fast-zlib-0.3.0[${PYTHON_USEDEP}]
@@ -83,7 +84,7 @@ RDEPEND="${RDEPEND}
 	dev-python/charset-normalizer[${PYTHON_USEDEP}]
 	~dev-python/ciso8601-2.3.3[${PYTHON_USEDEP}]
 	dev-python/cryptography[${PYTHON_USEDEP}]
-	~dev-python/dbus-fast-3.1.2[${PYTHON_USEDEP}]
+	~dev-python/dbus-fast-4.0.0[${PYTHON_USEDEP}]
 	~dev-python/fastuuid-0.14.0[${PYTHON_USEDEP}]
 	>=dev-python/faust-cchardet-2.1.18[${PYTHON_USEDEP}]
 	~dev-python/fnv-hash-fast-1.6.0[${PYTHON_USEDEP}]
@@ -93,7 +94,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/grpcio-1.76.0[${PYTHON_USEDEP}]
 	~dev-python/ha-ffmpeg-3.2.2[${PYTHON_USEDEP}]
 	~dev-python/habluetooth-5.8.0[${PYTHON_USEDEP}]
-	~dev-python/hass-nabucasa-1.11.0[${PYTHON_USEDEP}]
+	~dev-python/hass-nabucasa-1.13.0[${PYTHON_USEDEP}]
 	~dev-python/hassil-3.5.0[${PYTHON_USEDEP}]
 	~dev-python/home-assistant-bluetooth-2.0.0[${PYTHON_USEDEP}]
 	~dev-python/home-assistant-frontend-20260128.6[${PYTHON_USEDEP}]
@@ -103,7 +104,7 @@ RDEPEND="${RDEPEND}
 	>=dev-python/hyperframe-5.2.0[${PYTHON_USEDEP}]
 	~dev-python/ifaddr-0.2.0[${PYTHON_USEDEP}]
 	~dev-python/jinja2-3.1.6[${PYTHON_USEDEP}]
-	~dev-python/litellm-1.80.11[${PYTHON_USEDEP}]
+	~dev-python/litellm-1.81.3[${PYTHON_USEDEP}]
 	~dev-python/lru-dict-1.3.0[${PYTHON_USEDEP}]
 	>=dev-python/mashumaro-3.17[${PYTHON_USEDEP}]
 	>=dev-python/multidict-6.0.2[${PYTHON_USEDEP}]
@@ -134,6 +135,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/securetar-2025.2.1[${PYTHON_USEDEP}]
 	dev-python/sqlalchemy[${PYTHON_USEDEP}]
 	$(python_gen_cond_dep '~dev-python/standard-aifc-3.13.0[${PYTHON_USEDEP}]' python3_14)
+	$(python_gen_cond_dep '~dev-python/standard-telnetlib-3.13.0[${PYTHON_USEDEP}]' python3_14)
 	>=dev-python/tuf-4.0.0[${PYTHON_USEDEP}]
 	>=dev-python/typing-extensions-4.15.0[${PYTHON_USEDEP}]
 	<dev-python/typing-extensions-5.0[${PYTHON_USEDEP}]
@@ -265,7 +267,7 @@ RDEPEND="${RDEPEND}
 	blue_current? ( ~dev-python/bluecurrent-api-1.3.2[${PYTHON_USEDEP}] )
 	bluemaestro? ( ~dev-python/bluemaestro-ble-0.2.3[${PYTHON_USEDEP}] )
 	bluesound? ( ~dev-python/pyblu-2.0.5[${PYTHON_USEDEP}] )
-	bluetooth? ( ~dev-python/bleak-2.1.1[${PYTHON_USEDEP}] ~dev-python/bleak-retry-connector-4.4.4[${PYTHON_USEDEP}] ~dev-python/bluetooth-adapters-2.1.1[${PYTHON_USEDEP}] ~dev-python/bluetooth-auto-recovery-1.5.3[${PYTHON_USEDEP}] ~dev-python/bluetooth-data-tools-1.28.4[${PYTHON_USEDEP}] ~dev-python/dbus-fast-3.1.2[${PYTHON_USEDEP}] ~dev-python/habluetooth-5.8.0[${PYTHON_USEDEP}] )
+	bluetooth? ( ~dev-python/bleak-2.1.1[${PYTHON_USEDEP}] ~dev-python/bleak-retry-connector-4.4.4[${PYTHON_USEDEP}] ~dev-python/bluetooth-adapters-2.1.1[${PYTHON_USEDEP}] ~dev-python/bluetooth-auto-recovery-1.5.3[${PYTHON_USEDEP}] ~dev-python/bluetooth-data-tools-1.28.4[${PYTHON_USEDEP}] ~dev-python/dbus-fast-4.0.0[${PYTHON_USEDEP}] ~dev-python/habluetooth-5.8.0[${PYTHON_USEDEP}] )
 	bluetooth_le_tracker? ( ~dev-python/pygatt-4.0.5[${PYTHON_USEDEP}] )
 	bme280? ( ~dev-python/i2csense-0.0.4[${PYTHON_USEDEP}] ~dev-python/smbus-cffi-0.5.1[${PYTHON_USEDEP}] ~dev-python/bme280spi-0.2.0[${PYTHON_USEDEP}] )
 	bme680? ( ~dev-python/bme680-1.0.5[${PYTHON_USEDEP}] ~dev-python/smbus-cffi-0.5.1[${PYTHON_USEDEP}] )
@@ -807,7 +809,7 @@ RDEPEND="${RDEPEND}
 	onkyo? ( ~dev-python/aioonkyo-0.4.0[${PYTHON_USEDEP}] )
 	onvif? ( ~dev-python/onvif-zeep-async-4.0.4[${PYTHON_USEDEP}] ~dev-python/WSDiscovery-2.1.2[${PYTHON_USEDEP}] )
 	open_meteo? ( ~dev-python/open-meteo-0.3.2[${PYTHON_USEDEP}] )
-	openai_conversation? ( ~dev-python/openai-2.15.0[${PYTHON_USEDEP}] )
+	openai_conversation? ( ~dev-python/openai-2.16.0[${PYTHON_USEDEP}] )
 	openerz? ( ~dev-python/openerz-api-0.3.0[${PYTHON_USEDEP}] )
 	openevse? ( ~dev-python/python-openevse-http-0.2.1[${PYTHON_USEDEP}] )
 	openexchangerates? ( ~dev-python/aioopenexchangerates-0.6.8[${PYTHON_USEDEP}] )
